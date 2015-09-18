@@ -75,12 +75,6 @@ function getPhoneModels() {
   return models;
 }
 
-function getTelegramApiUrl(methodName) {
-  var userProperties = PropertiesService.getUserProperties();
-  
-  return TELEGRAM_BOT_API_BASE_URL + userProperties.getProperty("TELEGRAM_BOT_API_TOKEN") + "/" + methodName;
-}
-
 function createKey(storeId, modelId) {
   return storeId + ":" + modelId;
 }
